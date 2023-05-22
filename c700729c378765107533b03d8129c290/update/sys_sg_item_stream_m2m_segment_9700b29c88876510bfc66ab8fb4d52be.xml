@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="All Requests List Stream">1300b29c048765102badb393d90575d4</item_stream>
+        <segment display_value="All Requests Screen Segment">df00b29c978765106ca122f22a2609be</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:49</sys_created_on>
+        <sys_id>9700b29c88876510bfc66ab8fb4d52be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_9700b29c88876510bfc66ab8fb4d52be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:49</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

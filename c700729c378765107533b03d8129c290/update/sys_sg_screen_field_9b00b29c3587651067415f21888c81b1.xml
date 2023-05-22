@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>attachment_list</data_item_field_name>
+        <field_name>attachment_list</field_name>
+        <hidden>false</hidden>
+        <order>500</order>
+        <record_id_field>sys_id</record_id_field>
+        <screen display_value="Details">2b00b29cb68765106eb506852f0c12fc</screen>
+        <screen_data_item_table>x_snc_ow_credit_0_expense_request</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:52</sys_created_on>
+        <sys_id>9b00b29c3587651067415f21888c81b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>attachment_list</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_screen_field_9b00b29c3587651067415f21888c81b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:52</sys_updated_on>
+        <type>attachments_list</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+</record_update>

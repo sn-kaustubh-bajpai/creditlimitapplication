@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_ow_credit_0_expense_request</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="All Requests Record Screen">1b00b29c378765100d3e7f7d2b39f9ea</embedded_screen>
+        <item_view/>
+        <name>All Requests List Item Config</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:05</sys_created_on>
+        <sys_id>5300b29c74876510f07e536a4c50ead3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Requests List Item Config</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_master_item_5300b29c74876510f07e536a4c50ead3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:05</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="All Requests Card">1f00b29cc3876510e194f50510cc87b8</view_config>
+    </sys_sg_master_item>
+</record_update>

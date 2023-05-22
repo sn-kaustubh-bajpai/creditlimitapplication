@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_chart">
+    <sys_sg_chart action="INSERT_OR_UPDATE">
+        <jump_to_screen display_value="Single Score Report Drill down - Budget Reviewer">a700f29c898765102785a9e82c2bec01</jump_to_screen>
+        <name>Future - Budget Reviewer</name>
+        <report display_value="Upcoming - Budget Reviewer">ef00f29c5c87651064e821600459c72d</report>
+        <sys_class_name>sys_sg_chart</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:55</sys_created_on>
+        <sys_id>a300b29c38876510034b3fbdb10acdf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Future - Budget Reviewer</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_chart_a300b29c38876510034b3fbdb10acdf6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:55</sys_updated_on>
+        <title/>
+        <type>report</type>
+        <widget/>
+    </sys_sg_chart>
+</record_update>

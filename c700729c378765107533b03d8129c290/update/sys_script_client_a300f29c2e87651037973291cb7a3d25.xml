@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>end_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>Please enter the start date&#13;
+End Date ( {0} ) may not be same or before  Start Date.&#13;
+End Date ( {0} ) falls under a budget.</messages>
+        <name>Budget End Date Validation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var startDate = g_form.getValue('start_date');
+    if (!startDate) {
+		var msg = getMessage("Please enter the start date");
+        g_form.clearValue('end_date');
+        g_form.showFieldMsg('end_date', msg , 'error');
+    } else {
+        var ajax = new GlideAjax('x_snc_ow_credit_0.CostApprovalUtils');
+        ajax.addParam('sysparm_name', 'endDateBudget');
+        ajax.addParam('sysparm_end', newValue);
+        ajax.addParam('sysparm_start', startDate);
+        ajax.addParam("sysparm_sysId", g_form.getUniqueValue());
+        ajax.getXML(dateValidation);
+        var end_date = newValue.split(' ');
+    }
+
+    function dateValidation(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        answer = JSON.parse(answer);
+
+        if (answer.isEndpast == true) {
+            g_form.clearValue('end_date');
+            g_form.showFieldMsg('end_date', answer.msg , 'error');
+        } else if (answer.checkOtherBudgets == true) {
+            g_form.clearValue('end_date');
+            g_form.showFieldMsg('end_date', answer.msg2 , 'error');
+
+        } else {
+            g_form.hideFieldMsg('end_date');
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a300f29c2e87651037973291cb7a3d25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget End Date Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_script_client_a300f29c2e87651037973291cb7a3d25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:57</sys_updated_on>
+        <table>x_snc_ow_credit_0_budget_definition</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

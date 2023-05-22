@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="My team's costs">ef00f29cfc8765108130134a89bdee14</applet_launcher>
+        <order>30</order>
+        <section display_value="All requests">a300f29ce5876510fc8e3074638aab12</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:41</sys_created_on>
+        <sys_id>ef00f29cc78765100f455b4b7137b411</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_ef00f29cc78765100f455b4b7137b411</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:41</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

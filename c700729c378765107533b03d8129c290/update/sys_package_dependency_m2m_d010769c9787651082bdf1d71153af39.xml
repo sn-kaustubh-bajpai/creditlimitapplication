@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">2bee460b9732211082bdf1d71153afe2</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:29</sys_created_on>
+        <sys_id>d010769c9787651082bdf1d71153af39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:29</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>to show expenses</description>
+        <name>Expenses</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:36</sys_created_on>
+        <sys_id>1b00b29c858765101d105d9836813a7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expenses</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_template_1b00b29c858765101d105d9836813a7c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:36</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_01","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_02","Margin":{"Bottom":4},"Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_01","Id":"text_01"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_03","Margin":{"Bottom":16},"Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":16},"MaxLines":1,"CellId":"text_02","Id":"text_02"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_04","Margin":{"Bottom":4},"Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_04","Id":"text_04"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_06","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":16},"MaxLines":1,"CellId":"text_05","Id":"text_05"}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b00b29c858765101d105d9836813a7c"/>
+</record_update>

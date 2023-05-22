@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action/>
+        <action_attributes/>
+        <action_name>Budget Approver</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>false</active>
+        <button_type>primary</button_type>
+        <client_action/>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <client_script><![CDATA[function onClick() { }]]></client_script>
+        <confirmation_message>This action cannot be undone.</confirmation_message>
+        <confirmation_required>true</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>server_script</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon/>
+        <enable_for_all_experiences>false</enable_for_all_experiences>
+        <enabled>true</enabled>
+        <experience_restricted>false</experience_restricted>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>action_bar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon/>
+        <label>Budget Approver</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <model_conditions/>
+        <model_field_required/>
+        <order>0</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions table="x_snc_ow_credit_0_expense_request">123TEXTQUERY321LIKE^EQ<item endquery="false" field="123TEXTQUERY321" goto="false" newquery="false" operator="LIKE" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </record_conditions>
+        <record_selection_required>false</record_selection_required>
+        <required_roles name="x_snc_ow_credit_0.Budget reviewer">f300f29c5a8765106259ebe8929680de</required_roles>
+        <requires_value>false</requires_value>
+        <script_condition/>
+        <scripted_client_condition/>
+        <server_script><![CDATA[var approvalRecord = new GlideRecord('sysapproval_approver');
+approvalRecord.addQuery('sysapproval', current.sys_id);
+approvalRecord.addQuery('state', '=', 'requested');
+approvalRecord.addQuery('approver', '=', gs.getUserID());
+approvalRecord.query();
+if (approvalRecord.next()) {
+    approvalRecord.state = 'approved';
+    approvalRecord.update();
+}
+var msg = gs.getMessage('Request approval submitted');
+gs.addInfoMessage(msg);
+current.work_notes = "Request approval submitted";
+current.update();
+action.setRedirectURL(current);]]></server_script>
+        <specificity>21</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b00f29c05876510d6716d616a4e7ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget Approver</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_3b00f29c05876510d6716d616a4e7ab9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:59</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <tooltip>Approve</tooltip>
+        <ui_component/>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b00f29c05876510d6716d616a4e7ab9"/>
+</record_update>

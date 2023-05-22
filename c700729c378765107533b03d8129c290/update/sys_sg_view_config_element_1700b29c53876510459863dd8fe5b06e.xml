@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_05_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:06</sys_created_on>
+        <sys_id>1700b29c53876510459863dd8fe5b06e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_05_element</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_1700b29c53876510459863dd8fe5b06e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:06</sys_updated_on>
+        <view_config display_value="Expenses Card">5b00b29c7d87651077416b7a874872b8</view_config>
+        <view_template_slot display_value="text_05">b4f4c13041275010f877183fc9b8be56</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

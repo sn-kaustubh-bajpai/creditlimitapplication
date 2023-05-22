@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg">
+    <sys_push_notif_msg action="INSERT_OR_UPDATE">
+        <message_string>Your request for "${short_description}" has been approved.</message_string>
+        <name>Expense request approved - reviewer</name>
+        <push_app display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</push_app>
+        <push_message_content display_value="Expense request message content - Mobile">a300f29cd4876510af3430d2e7ac1331</push_message_content>
+        <subject>Your request has been approved</subject>
+        <sys_class_name>sys_push_notif_msg</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:42</sys_created_on>
+        <sys_id>7700f29ccd8765100cd0fc17f072bacd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expense request approved - reviewer</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_push_notif_msg_7700f29ccd8765100cd0fc17f072bacd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:42</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <type>push</type>
+    </sys_push_notif_msg>
+</record_update>

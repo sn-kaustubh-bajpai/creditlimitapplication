@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>true</available_offline>
+        <data_item display_value="Single score DI for Budget">ab00b29c58876510d92e21232b8f02f4</data_item>
+        <description>Budget</description>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="Budget Icon">2300b29cbd876510b31b4bbf191339ef</icon>
+        <item_view/>
+        <name>Budget</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <parameter_screen/>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:41</sys_created_on>
+        <sys_id>eb00f29c2f8765106a280eb9fbcf810f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_form_screen_eb00f29c2f8765106a280eb9fbcf810f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:41</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Budget Card">ef00b29c4e8765106df932f84fe64aef</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=eb00f29c2f8765106a280eb9fbcf810f"/>
+</record_update>

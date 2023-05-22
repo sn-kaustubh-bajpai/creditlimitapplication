@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="8810369c9787651082bdf1d71153af94" extends="task" label="Expense request" max_length="40" name="x_snc_ow_credit_0_expense_request" text_index="true" type="collection">
+        <element label="Budget" max_length="32" name="budget" reference="x_snc_ow_credit_0_budget_definition" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Business justification" max_length="4000" name="business_justification" type="string_full_utf8"/>
+        <element label="Expense end date" max_length="40" name="end_date" type="glide_date"/>
+        <element active="false" attributes="edge_encryption_enabled=true" function_definition="glidefunction:length(total_cost)" function_field="true" label="Count New Pending Approvals" max_length="255" name="rpt_count_new_pending_approvals" read_only="true" type="string"/>
+        <element label="Expense start date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Status" max_length="40" name="status" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Total cost" max_length="32" name="total_cost" read_only="true" type="currency2"/>
+    </element>
+</database>

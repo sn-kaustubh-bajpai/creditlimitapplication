@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_ow_credit_0.Employee" name="x_snc_ow_credit_0.Employee">7b00f29cdc876510b0a53ec31b840ddd</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:50</sys_created_on>
+        <sys_id>7300f29c38876510acb815ca7b3d86af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7b00f29cdc876510b0a53ec31b840ddd</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_embedded_help_role_7300f29c38876510acb815ca7b3d86af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:50</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

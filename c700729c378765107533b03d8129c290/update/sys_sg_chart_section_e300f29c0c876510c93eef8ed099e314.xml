@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_chart_section">
+    <sys_sg_chart_section action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <card_size/>
+        <charts>6b00b29ca48765102f92e91b0578eef5,2700b29cf0876510ed541f32ef503ff7,af00b29c80876510d36aad2a6c3faff6,eb00b29c72876510e1ff06dc9d8ea7f6,2f00b29cf48765102309abbd99bcaaf8</charts>
+        <column_count/>
+        <custom_height/>
+        <custom_width/>
+        <data_item/>
+        <hide_header>false</hide_header>
+        <hide_section_if_empty>false</hide_section_if_empty>
+        <is_custom_size>false</is_custom_size>
+        <is_hidden_preference_name/>
+        <orientation>horizontal</orientation>
+        <required_roles>x_snc_ow_credit_0.Manager</required_roles>
+        <row_count/>
+        <sys_class_name>sys_sg_chart_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:43</sys_created_on>
+        <sys_id>e300f29c0c876510c93eef8ed099e314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requests overview</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_chart_section_e300f29c0c876510c93eef8ed099e314</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:43</sys_updated_on>
+        <table/>
+        <title>Requests overview</title>
+        <type>single_score</type>
+        <visible_condition/>
+        <wide_column_count/>
+    </sys_sg_chart_section>
+</record_update>

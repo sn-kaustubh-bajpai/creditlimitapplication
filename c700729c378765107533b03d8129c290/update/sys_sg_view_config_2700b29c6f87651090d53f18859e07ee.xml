@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <description/>
+        <name>Overdue budget reviewer Record Screen Card</name>
+        <scratchpad_script/>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:37</sys_created_on>
+        <sys_id>2700b29c6f87651090d53f18859e07ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Overdue budget reviewer Record Screen Card</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_config_2700b29c6f87651090d53f18859e07ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:37</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <template display_value="Template 01">6bb0be5c41a71010f877183fc9b8be0c</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=2700b29c6f87651090d53f18859e07ee"/>
+</record_update>

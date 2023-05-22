@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>budget_available</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:00</sys_created_on>
+        <sys_id>cf00b29c54876510e02af4cb95cfeb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>budget_available</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ui_policy_action_cf00b29c54876510e02af4cb95cfeb02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:00</sys_updated_on>
+        <table>x_snc_ow_credit_0_budget_definition</table>
+        <ui_policy display_value="Hide Budgetspent and Available while inserting">4700b29cdb87651010bd45b089e80403</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

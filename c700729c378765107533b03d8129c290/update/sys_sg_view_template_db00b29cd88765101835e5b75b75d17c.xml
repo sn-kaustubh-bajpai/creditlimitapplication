@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Cost approval</description>
+        <name>Budget Template</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:58</sys_created_on>
+        <sys_id>db00b29cd88765101835e5b75b75d17c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget Template</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_template_db00b29cd88765101835e5b75b75d17c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:58</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Id":"view_group_01","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Margin":{"Top":16,"Bottom":16},"Children":[{"Type":"ViewGroup","Id":"view_group_02","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Margin":{"Bottom":8},"Children":[{"Type":"ViewGroup","Id":"view_group_03","Orientation":"Vertical","Alignment":"Left","Distribution":"Equal","Children":[{"Type":"ViewGroup","Id":"view_group_04","Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","BackgroundColor":"#f1f1f1","CornerRadius":2,"Height":20,"Children":[{"Type":"Text","TextColor":"#000000","Font":{"Weight":"regular","Size":8},"Margin":{"Top":1,"Bottom":1,"Left":8,"Right":1},"TextAlignment":"Left","CellId":"text_icon_01","Id":"text_icon_01"},{"Type":"Text","TextColor":"#333E3F","Font":{"Weight":"semibold","Size":13},"MaxLines":1,"textStyle":"custom","Margin":{"Top":2,"Right":8,"Bottom":2,"Left":4},"TextAlignment":"Left","CellId":"text_01","Id":"text_01"}]}]}]},{"Type":"Text","Id":"text_03","Margin":{"Top":8,"Bottom":8},"TextColor":"#333e3f","Font":{"Weight":"bold","Size":20},"MaxLines":1,"textStyle":"custom","TextAlignment":"Left","CellId":"text_03"},{"Type":"ViewGroup","Id":"view_group_06","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Margin":{},"Children":[{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"viewgroup_05","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_07","Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_08","Id":"text_08","Margin":{"Right":4}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_09","Id":"text_09"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_08","Margin":{"Top":8},"Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":13},"MaxLines":1,"Margin":{"Right":4},"CellId":"text_07","Id":"text_07"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_10","Id":"text_10"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_11","Id":"text_11","Margin":{"Left":5,"Right":5}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_12","Id":"text_12"}]}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Right","Distribution":"Auto","Id":"viewgroup_11","Children":[{"Type":"Button","Font":{"Weight":"regular","Size":22},"CellId":"button_05","Id":"button_05","BorderWidth":1,"CornerRadius":8,"Height":40,"Width":40,"TextAlignment":"center"}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=db00b29cd88765101835e5b75b75d17c"/>
+</record_update>

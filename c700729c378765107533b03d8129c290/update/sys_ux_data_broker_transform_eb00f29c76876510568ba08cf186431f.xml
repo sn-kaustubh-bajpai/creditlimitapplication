@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_ow_credit_0.Budget Details</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Budget Details</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform() {
+    var upcomingBudget = false;
+    var data = {};
+    var budgetRec = new GlideRecord("x_snc_ow_credit_0_budget_definition");
+    budgetRec.addQuery("state", 20);
+    budgetRec.orderBy('start_date');
+    budgetRec.setLimit(1);
+    budgetRec.query();
+    if (!budgetRec.next()) {
+        upcomingBudget = true;
+		data.budgetAvailable = upcomingBudget;
+    }
+    var gr = new GlideRecord('x_snc_ow_credit_0_budget_definition');
+    gr.addEncodedQuery('state=10');
+    gr.query();
+    if (gr.next()) {
+        data.title = gr.name.toString();
+        data.reqTitle = gs.getMessage('Requests: {0}',gr.name);
+        data.budgetTitle = gs.getMessage('Budget: {0}',gr.name);
+    }
+    return data;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:33</sys_created_on>
+        <sys_id>eb00f29c76876510568ba08cf186431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget Details</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_eb00f29c76876510568ba08cf186431f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:33</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=eb00f29c76876510568ba08cf186431f"/>
+</record_update>

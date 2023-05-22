@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>20</order>
+        <search_context_config display_value="Cost Approval - Budget Reviewer">7f00f29c4f8765102b3bfe800b41f6d6</search_context_config>
+        <source display_value="Budget">7300f29cb38765104683a856d00b34d6</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:05</sys_created_on>
+        <sys_id>bb00f29c7a8765108961f7eb2488a9d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_bb00f29c7a8765108961f7eb2488a9d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:05</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

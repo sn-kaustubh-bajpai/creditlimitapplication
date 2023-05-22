@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="8c10369c9787651082bdf1d71153af49" label="Budget definition" max_length="40" name="x_snc_ow_credit_0_budget_definition" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Budget available" max_length="32" name="budget_available" read_only="true" type="currency2"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Budget spent" max_length="32" name="budget_spent" read_only="true" type="currency2"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#9;var state = 10;&#10;&#9;if(!current.start_date.nil() &amp;&amp; !current.end_date.nil()){&#10;&#9;&#9;var currentDate = new GlideDateTime(new GlideDate().getValue());&#10;&#9;&#9;var startDate = new GlideDateTime(current.start_date);&#10;&#9;&#9;var endDate = new GlideDateTime(current.end_date);&#10;&#9;&#9;if(currentDate &gt;= startDate &amp;&amp; currentDate &lt;= endDate){&#10;&#9;&#9;&#9;state = 10;&#10;&#9;&#9;}else if(currentDate &lt; startDate){&#10;&#9;&#9;&#9;state = 20;&#10;&#9;&#9;}else if(currentDate &gt; endDate){&#10;&#9;&#9;&#9;state = 30;&#10;&#9;&#9;}&#10;&#9;}&#10;&#9;return state; &#10;&#10;})(current);" choice="3" default="10" label="State" max_length="40" name="state" read_only="true" type="integer" virtual="true">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="Upcoming" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="Closed" sequence="30" value="30"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" label="Total budget" mandatory="true" max_length="32" name="total_budget" type="currency2"/>
+        <element attributes="edge_encryption_enabled=true" label="Work notes" max_length="40" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="budget_available"/>
+        </index>
+        <index name="index2">
+            <element name="budget_spent"/>
+        </index>
+        <index name="index3">
+            <element name="total_budget"/>
+        </index>
+    </element>
+</database>

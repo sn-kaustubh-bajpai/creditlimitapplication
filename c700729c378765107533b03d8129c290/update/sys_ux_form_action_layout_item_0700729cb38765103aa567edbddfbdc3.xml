@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="Approve Manager">cb00729c7f8765102f2737c04cd428c5</action>
+        <active>true</active>
+        <color>primary</color>
+        <description/>
+        <item_type>action</item_type>
+        <label>Approve</label>
+        <layout_group/>
+        <name>Approve Manager</name>
+        <order>200</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:42</sys_created_on>
+        <sys_id>0700729cb38765103aa567edbddfbdc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_0700729cb38765103aa567edbddfbdc3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:42</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

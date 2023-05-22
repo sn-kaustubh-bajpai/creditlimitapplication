@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_02_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:02</sys_created_on>
+        <sys_id>d700b29c91876510d8539a1abadf884d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_02_element</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_d700b29c91876510d8539a1abadf884d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:02</sys_updated_on>
+        <view_config display_value="Pending Approvals - New - List Record Screen Card">ef00b29c218765101c8f2109f84e25ec</view_config>
+        <view_template_slot display_value="text_02">eee0b907c7321010100f2f3bf4c26079</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

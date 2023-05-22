@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ticket_tab_configuration">
+    <ticket_tab_configuration action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <order>10</order>
+        <parent display_value="x_snc_ow_credit_0_expense_request">4f00729cff87651073a216714370eda7</parent>
+        <script><![CDATA[/** * The script should evaluate true/false or `answer` populated with true/false which validates if a tab is visible  * The `current` object refers to the current Task(extension) record  **/ ]]></script>
+        <sys_class_name>ticket_tab_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:05</sys_created_on>
+        <sys_id>4300729c89876510dcf920030cd87da7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>ticket_tab_configuration_4300729c89876510dcf920030cd87da7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:05</sys_updated_on>
+        <tab_name>Activity</tab_name>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <type>activity</type>
+        <visible/>
+        <widget/>
+        <widget_param/>
+    </ticket_tab_configuration>
+    <sys_translated_text action="delete_multiple" query="documentkey=4300729c89876510dcf920030cd87da7"/>
+</record_update>

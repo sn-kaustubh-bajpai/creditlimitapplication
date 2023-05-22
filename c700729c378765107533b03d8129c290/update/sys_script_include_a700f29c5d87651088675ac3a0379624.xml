@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ow_credit_0.CostApprovalUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CostApprovalUtils</name>
+        <script><![CDATA[var CostApprovalUtils = Class.create();
+CostApprovalUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    startDate: function() {
+        var date = this.getParameter('sysparm_date');
+        var backupStartDate = date;
+        var currentDate = new GlideDateTime();
+        currentDate.setValue(new GlideDate().getValue());
+        var formatDate = "";
+        var formatTime = "";
+        var startDate = new GlideDateTime();
+        date = this.loggedInUserDateformat(date);
+        startDate.setValue(date);
+        var end = new GlideDateTime();
+        var endGdt = this.getParameter('sysparm_end');
+        endGdt = this.loggedInUserDateformat(endGdt);
+        end.setValue(endGdt);
+        var isEndPastDate = false;
+        if (end.getNumericValue() != 0) {
+            isEndPastDate = end.getNumericValue() <= startDate.getNumericValue();
+        }
+        var budgetRecord = this.getBudgetRecord(startDate.getDate());
+        var returnObject = {
+            "isStartpast": startDate.getNumericValue() < currentDate.getNumericValue(),
+            "budgetRecord": budgetRecord,
+            "isEndpast": isEndPastDate,
+            "msg": gs.getMessage('Start Date ({0}) may not be before today.', backupStartDate.split(" ")[0]),
+            "msg2": gs.getMessage('A budget has not been set up for {0}. Please contact your administrator to define a budget.', backupStartDate.split(" ")[0]),
+			"msg3": gs.getMessage("Start Date ({0}) may not be after End Date.", date.split(" ")[0])
+        };
+        return JSON.stringify(returnObject);
+    },
+    getBudgetRecord: function(userDate, changingBudgetID) {
+        var budget = new GlideRecord("x_snc_ow_credit_0_budget_definition");
+        budget.addQuery("start_date", "<=", userDate).addCondition("end_date", ">=", userDate);
+        if (changingBudgetID)
+            budget.addQuery("sys_id", "!=", changingBudgetID);
+        budget.orderByDesc("sys_created_on");
+        budget.setLimit(1);
+        budget.query();
+        if (budget.next())
+            return budget.getValue("sys_id");
+        return false;
+    },
+    startDateBudget: function(startDate, endDate, BudgetSysId) {
+
+        var currentDate = new GlideDateTime();
+        currentDate.setValue(new GlideDate().getValue());
+        var start = new GlideDateTime();
+        var startGdt = this.getParameter('sysparm_start') || startDate;
+        startGdt = this.loggedInUserDateformat(startGdt);
+        start.setValue(startGdt);
+        var end = new GlideDateTime();
+        var endGdt = this.getParameter('sysparm_end') || endDate;
+        endGdt = this.loggedInUserDateformat(endGdt);
+        end.setValue(endGdt);
+        var checkOtherBudgets = this.checkOtherBudgetsPeriod(start, end, this.getParameter("sysparm_sysId") || BudgetSysId);
+        if (checkOtherBudgets) {
+            checkOtherBudgets = true;
+        }
+		var isEndPastDate = false;
+        if(end.getNumericValue()!=0){
+			isEndPastDate = end.getNumericValue() <= start.getNumericValue();
+		}
+        var returnObject = {
+			"isEndpast": isEndPastDate,
+            "checkOtherBudgets": checkOtherBudgets
+        };
+        return JSON.stringify(returnObject);
+    },
+
+    endDateBudget: function(endDate, startDate, BudgetSysId) {
+        var end_date = this.getParameter('sysparm_end') || endDate;
+        var start_date = this.getParameter('sysparm_start') || startDate || new GlideDateTime();
+        start_date = this.loggedInUserDateformat(start_date);
+        end_date = this.loggedInUserDateformat(end_date);
+        var startGdt = new GlideDateTime();
+        startGdt.setValue(start_date);
+        var endGdt = new GlideDateTime();
+        endGdt.setValue(end_date);
+        var checkOtherBudgets = this.checkOtherBudgetsPeriod(startGdt, endGdt, this.getParameter("sysparm_sysId") || BudgetSysId);
+
+        var returnObject = {
+            "isEndpast": endGdt.getNumericValue() <= startGdt.getNumericValue(),
+            "checkOtherBudgets": checkOtherBudgets,
+            "msg" : gs.getMessage('End Date ({0}) may not be same or before Start Date.',end_date.split(" ")[0]),
+			"msg2" : gs.getMessage('End Date ({0}) falls under a budget.',end_date.split(" ")[0])
+        };
+        return JSON.stringify(returnObject);
+    },
+
+    checkOtherBudgetsPeriod: function(startDate, endDate, BudgetSysId) {
+        endDate = endDate.toString();
+        startDate = startDate.toString();
+        var startDateArr = startDate.split(' ');
+        var endDateArr = endDate.split(' ');
+        var budget = new GlideRecord("x_snc_ow_credit_0_budget_definition");
+        if (endDate == '') {
+            budget.addQuery("start_date", "<=", startDateArr[0]).addCondition("end_date", ">=", startDateArr[0]);
+        } else {
+            budget.addQuery("start_date", "<=", endDateArr[0]).addCondition("end_date", ">=", startDateArr[0]);
+        }
+        budget.addQuery("sys_id", "!=", BudgetSysId);
+        budget.setLimit(1);
+        budget.query();
+        if (budget.next()) {
+            return true;
+        }
+
+        return false;
+    },
+
+    checkOtherBudgetsSpan: function(startDate, endDate, BudgetSysId) {
+
+        var budget = new GlideRecord("x_snc_ow_credit_0_budget_definition");
+        budget.addQuery("start_date", ">=", startDate).addCondition("end_date", "<=", endDate);
+        budget.addQuery("sys_id", "!=", BudgetSysId);
+        budget.setLimit(1);
+        budget.query();
+        if (budget.next())
+            return true;
+        return false;
+    },
+
+    getUserSessionCurrency: function() {
+        var currencyType = new GlideRecord("fx_currency_test");
+        currencyType.initialize();
+        return currencyType.amount.getSessionCurrencyCode().toString();
+    },
+
+    loggedInUserDateformat: function(date, userID) {
+        var dateFormat = '';
+        userID = userID || gs.getUserID();
+        var userObj = new GlideRecord('sys_user');
+        if (userObj.get(userID)) {
+            dateFormat = userObj.getValue('date_format');
+        }
+        if (dateFormat == null || dateFormat == '') {
+            return date + ' ' + "00:00:00";
+        } else if (dateFormat.indexOf("MM-dd-yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[2] + "-" + formatDate[0] + "-" + formatDate[1] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd-MM-yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+
+        } else if (dateFormat.indexOf("yyyy-MM-dd") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[0] + "-" + formatDate[1] + "-" + formatDate[2] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd/MM/yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('/');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd.MM.yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('.');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+        }
+    },
+    endDate: function() {
+        var end_date = this.getParameter('sysparm_end');
+        var start_date = this.getParameter('sysparm_start') || new GlideDateTime();
+        start_date = this.loggedInUserDateformat(start_date);
+        end_date = this.loggedInUserDateformat(end_date);
+        var startGdt = new GlideDateTime(start_date);
+        startGdt.getNumericValue();
+        var endGdt = new GlideDateTime(end_date);
+        endGdt.getNumericValue();
+        return endGdt.getNumericValue() < startGdt.getNumericValue();
+    },
+
+    assignmentList: function(peopleManager, state) {
+        var res = [];
+        var loggedInUser = gs.getUserID();
+        if (state == -5) {
+            res.push(peopleManager);
+        } else if (state == -6) {
+            var grp = new GlideRecord("sys_user_group");
+            grp.addQuery("name", "x_snc_ow_credit_0-Budget Reviewers");
+            grp.query();
+            if (grp.next()) {
+                res.push(grp.manager);
+            }
+
+            var gr = new GlideRecord('sys_user_grmember');
+            gr.addQuery('group', '8b00729c8a87651023ed8a01c9ff8aa4');
+            gr.query();
+            while (gr.next()) {
+                var memberOfGroup = gr.getValue('user');
+                if (loggedInUser == memberOfGroup && loggedInUser != grp.manager) {
+                    res.length = 0;
+                    res.push(memberOfGroup);
+                    break;
+                } else {
+                    res.push(memberOfGroup);
+                }
+            }
+
+
+        }
+        return 'sys_idIN' + res;
+    },
+
+    viewButton: function(sysID) {
+        var answer = false;
+        var curUser = gs.getUserID();
+        var gr_expense = new GlideRecord('x_snc_ow_credit_0_expense_request');
+        gr_expense.get(sysID);
+        if (gr_expense.assigned_to == curUser) {
+            answer = true;
+        }
+        return answer;
+    },
+
+    getUpcomingBudget: function() {
+        var budgetRec = new GlideRecord("x_snc_ow_credit_0_budget_definition");
+        budgetRec.addQuery("state", 20); //state is upcoming
+        budgetRec.orderBy('start_date');
+        budgetRec.setLimit(1);
+        budgetRec.query();
+        if (budgetRec.next()) {
+            return budgetRec.getUniqueValue();
+        }
+        return gs.getMessage("Next budget not available");
+    },
+    canAssignToOthers: function() {
+        if (current.state != -6) {
+            return false;
+        }
+        var isManager = false;
+       // var isGrpMember = false;
+        var grp = new GlideRecord("sys_user_group");
+        grp.addQuery("name", "x_snc_ow_credit_0-Budget Reviewers");
+        grp.query();
+        if (grp.next()) {
+            //isGrpMember = gs.getUser().isMemberOf(grp.getUniqueValue());
+            isManager = (grp.manager == gs.getUserID());
+
+        }
+        return isManager;
+    },
+    canEditAssignedTo: function() {
+    if (current.state != -6) {
+    return false;
+    }
+    var isManager = false;
+    var isGrpMember = false;
+    var grp = new GlideRecord("sys_user_group");
+    grp.addQuery("name", "x_snc_ow_credit_0-Budget Reviewers");
+    grp.query();
+    if (grp.next()) {
+    isGrpMember = gs.getUser().isMemberOf(grp.getUniqueValue());
+    isManager = (grp.manager == gs.getUserID());
+
+
+
+    }
+    return isManager || isGrpMember;
+    },
+    /*_________________________________________________________________
+   * Description:
+   * Parameters:
+   * Returns:
+   ________________________________________________________________*/
+    approveExpenses: function() {
+        var sysId = this.getParameter("sysparm_recSysId");
+        var approvalRecord = new GlideRecord('sysapproval_approver');
+        approvalRecord.addQuery('sysapproval', sysId);
+        approvalRecord.addQuery('state', '=', 'requested');
+        approvalRecord.addQuery('approver', '=', gs.getUserID());
+        approvalRecord.query();
+        if (approvalRecord.next()) {
+            approvalRecord.state = 'approved';
+            approvalRecord.update();
+        }
+        var msg = (gs.getUser().hasRole('x_snc_ow_credit_0.Budget reviewer')) ? gs.getMessage('Request is approved') : gs.getMessage("You've approved the request and sent it for final review");
+        gs.addInfoMessage(msg);
+        return true;
+    },
+    /*_________________________________________________________________
+   * Description:
+   * Parameters:
+   * Returns:
+   ________________________________________________________________*/
+    rejectExpenses: function() {
+        var sysId = this.getParameter("sysparm_recSysId");
+        var approvalRecord = new GlideRecord('sysapproval_approver');
+        approvalRecord.addQuery('sysapproval', sysId);
+        approvalRecord.addQuery('state', '=', 'requested');
+        approvalRecord.addQuery('approver', '=', gs.getUserID());
+        approvalRecord.query();
+        if (approvalRecord.next()) {
+            approvalRecord.state = 'rejected';
+            approvalRecord.update();
+        }
+        var msg = gs.getMessage('Request is rejected!');
+        gs.addErrorMessage(msg);
+        return true;
+    },
+
+
+    type: 'CostApprovalUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:09</sys_created_on>
+        <sys_id>a700f29c5d87651088675ac3a0379624</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CostApprovalUtils</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_script_include_a700f29c5d87651088675ac3a0379624</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

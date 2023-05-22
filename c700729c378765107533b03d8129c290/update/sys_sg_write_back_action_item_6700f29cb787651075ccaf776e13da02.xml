@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description>Edit budget</description>
+        <execution_script/>
+        <name>Edit budget</name>
+        <parameter_screen display_value="Edit budget">5b00b29c878765108a9ef61f36da60dd</parameter_screen>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:03</sys_created_on>
+        <sys_id>6700f29cb787651075ccaf776e13da02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Edit budget</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_6700f29cb787651075ccaf776e13da02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:03</sys_updated_on>
+        <table>x_snc_ow_credit_0_budget_definition</table>
+        <template>name={{Input: name}}^start_date={{Input: startDate}}^end_date={{Input: endDate}}^total_budget.amount={{Input: amount}}^total_budget.currency={{Input: currency}}^EQ</template>
+        <type>update</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=6700f29cb787651075ccaf776e13da02"/>
+</record_update>

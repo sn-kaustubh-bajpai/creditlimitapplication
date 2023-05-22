@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_highlighted_value_condition">
+    <sys_highlighted_value_condition action="INSERT_OR_UPDATE">
+        <color>info</color>
+        <conditions table="x_snc_ow_credit_0_expense_request">state=-6^EQ<item display_value="Pending final review" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-6"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <highlighted_value display_value="state">3700f29c4b8765106b041c7ef913a0af</highlighted_value>
+        <icon display_value="presence-fill">presence_fill</icon>
+        <order>0</order>
+        <show_icon>true</show_icon>
+        <status/>
+        <sys_class_name>sys_highlighted_value_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:46</sys_created_on>
+        <sys_id>3300f29ca4876510cba79400b14f67ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_highlighted_value_condition_3300f29ca4876510cba79400b14f67ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:46</sys_updated_on>
+        <value_override/>
+        <variant>tertiary</variant>
+    </sys_highlighted_value_condition>
+</record_update>
