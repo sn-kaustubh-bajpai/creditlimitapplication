@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Home">0300729cbb8765104e5bfb5cd270d8c7</macroponent>
+        <name>Score card onClick</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Closed",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Overdue",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Upcoming",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Assigned to me",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Open",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Due soon",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+async function handler({api, event, helpers, imports}) {
+    const payload = event.payload;
+    const data = payload.hasOwnProperty('params') ? payload.params : payload;
+    const {
+        table,
+        query,
+        listTitle
+    } = data;
+    const element = payload.hasOwnProperty('data') ? payload.data.elements[0] : listTitle;
+ 
+    const closed = await helpers.translate("Closed");
+    const open = await helpers.translate("Open");
+    const dueSoon = await helpers.translate("Due soon");
+    const Overdue = await helpers.translate("Overdue");
+    const Upcoming = await helpers.translate("Upcoming");
+    const assignedTome = await helpers.translate("Assigned to me");
+
+
+    var title = {
+        "MSG: Closed": await helpers.translate("Closed"),
+        "MSG: Open":await helpers.translate("Open"),
+        "MSG: Due soon":await helpers.translate("Due soon"),
+        "MSG: Overdue":await helpers.translate("Overdue"),
+        "MSG: Upcoming":await helpers.translate("Upcoming"),
+        "MSG: Assigned to me": await helpers.translate("Assigned to me")
+    };
+
+    title[closed]=closed;
+    title[open]=open;
+    title[dueSoon]=dueSoon;
+    title[Overdue]=Overdue;
+    title[Upcoming]=Upcoming;
+    title[assignedTome]=assignedTome;
+
+
+    api.emit("NAV_ITEM_SELECTED", {
+        "route": "simplelist",
+        "fields": {
+            table
+        },
+        "params": {
+            query,
+            listTitle:title[element],
+            listView: "cost_approval_x_snc_ow_credit_0"
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:43</sys_created_on>
+        <sys_id>0f00729cf9876510a6fbf7ed5ceaf3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Score card onClick</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_client_script_0f00729cf9876510a6fbf7ed5ceaf3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:43</sys_updated_on>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

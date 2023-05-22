@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_facet">
+    <sys_search_facet action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_facet_name>x_snc_evet_test_event.capacity_status</ais_facet_name>
+        <label>Capacity</label>
+        <name>Full</name>
+        <option_limit>10</option_limit>
+        <order>300</order>
+        <search_context_config display_value="evet-test - Event Registration Search App">2700f29c4b8765109a776f10c0b6d523</search_context_config>
+        <sys_class_name>sys_search_facet</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:43</sys_created_on>
+        <sys_id>e700f29c0a876510b7c6e3572c7bb823</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_evet_test_event.capacity_status</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_search_facet_e700f29c0a876510b7c6e3572c7bb823</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:43</sys_updated_on>
+    </sys_search_facet>
+</record_update>

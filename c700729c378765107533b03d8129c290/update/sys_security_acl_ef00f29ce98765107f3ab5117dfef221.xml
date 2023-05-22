@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition table="x_snc_ow_credit_0_expense_request.assigned_to">state=-6^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description>Allow write for assigned_to in x_snc_cost_appro_0_expense_request, for users with role x_snc_cost_appro_0.Budget reviewer, and if the ACL script returns true, and if the ACL condition (state=-6^EQ) evaluates to true.</description>
+        <name>x_snc_ow_credit_0_expense_request.assigned_to</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[answer = new x_snc_ow_credit_0.CostApprovalUtils().canEditAssignedTo();]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:02</sys_created_on>
+        <sys_id>ef00f29ce98765107f3ab5117dfef221</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ow_credit_0_expense_request.assigned_to</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_security_acl_ef00f29ce98765107f3ab5117dfef221</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:02</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

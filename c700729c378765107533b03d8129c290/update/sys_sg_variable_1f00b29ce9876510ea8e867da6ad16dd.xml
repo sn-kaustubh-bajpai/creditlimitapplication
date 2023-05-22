@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_variable">
+    <sys_sg_variable action="INSERT_OR_UPDATE">
+        <name>startDate</name>
+        <parameter_screen display_value="Edit budget">5b00b29c878765108a9ef61f36da60dd</parameter_screen>
+        <parameter_section/>
+        <sys_class_name>sys_sg_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:08</sys_created_on>
+        <sys_id>1f00b29ce9876510ea8e867da6ad16dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>startDate</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_variable_1f00b29ce9876510ea8e867da6ad16dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:08</sys_updated_on>
+        <type>db_field</type>
+    </sys_sg_variable>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg_content">
+    <sys_push_notif_msg_content action="INSERT_OR_UPDATE">
+        <name>SLA -Expense request</name>
+        <push_app display_value="ServiceNow Mobile Application">05ed2fb177002300258da2e2c81061c2</push_app>
+        <script><![CDATA[(function buildJSON( /*GlideRecord*/ current, /*String*/ message, /*Object*/ attributes) {
+        var expenseGr = new GlideRecord('x_snc_ow_credit_0_expense_request');
+        if (expenseGr.get(current.task.toString())) {
+			var days = Math.floor(new GlideDateTime(current.time_left).getNumericValue()/(1000 * 3600 * 24));
+            var layoutFields = {
+                "Identifier": "number",
+                "Description": "short_description",
+                "Status": "state"
+            };
+            var json = '';
+            if (expenseGr.state == -6) {
+                json = new global.ActionablePushPayloadBuilder(expenseGr, "1300b29cc087651000542168257544b5", layoutFields).buildJSON();
+            } else {
+                json = new global.ActionablePushPayloadBuilder(expenseGr, "9300b29c41876510ab766f4ce17e64b6", layoutFields).buildJSON();
+            }
+            json.Layout.Status = "Due in " + days + " days";
+            return json;
+		}
+
+        })(current, message, attributes);]]></script>
+        <sys_class_name>sys_push_notif_msg_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:57</sys_created_on>
+        <sys_id>ef00f29c1a8765103b98c015e9d43630</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLA -Expense request</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_push_notif_msg_content_ef00f29c1a8765103b98c015e9d43630</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:57</sys_updated_on>
+    </sys_push_notif_msg_content>
+</record_update>

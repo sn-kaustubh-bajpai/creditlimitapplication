@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:11</sys_created_on>
+        <sys_id>cb00729c03876510c7e2dcd781c6e1bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_cb00729c03876510c7e2dcd781c6e1bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+        <table>global</table>
+        <ux_form_action_layout display_value="Approve/Reject Manager">cf00729cbf876510f9c26a9764f434c4</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Approve">0f00729c2a876510b49738cf8cc308c4</ux_form_action_layout_item>
+    </sys_ux_m2m_action_layout_item>
+</record_update>

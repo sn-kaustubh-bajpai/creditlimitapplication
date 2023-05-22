@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description/>
+        <event_name>x_snc_ow_credit_0.request_assigned</event_name>
+        <fired_by>BR</fired_by>
+        <queue/>
+        <suffix>request_assigned</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:11</sys_created_on>
+        <sys_id>ff00f29c8b876510578d1dc331805ec9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ow_credit_0.request_assigned</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sysevent_register_ff00f29c8b876510578d1dc331805ec9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+    </sysevent_register>
+</record_update>

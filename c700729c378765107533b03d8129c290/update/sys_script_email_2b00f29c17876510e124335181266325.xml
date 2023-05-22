@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_snc_ow_credit_0_budget_ws</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+    var url = '';
+    var gr = new GlideRecord('sys_user_has_role');
+    gr.addQuery('user', current.assigned_to.toString());
+    gr.addQuery('role.name', 'x_snc_ow_credit_0.Manager').addOrCondition('role.name', 'x_snc_ow_credit_0.Budget reviewer');
+    gr.query();
+    if (gr.next()) {
+        if (gr.role.name == 'x_snc_ow_credit_0.Budget reviewer') {
+            url = [gs.getProperty('glide.servlet.uri'), 'now/x_snc_ow_credit_0-cost-approval/workspace/record/x_snc_ow_credit_0_expense_request/', current.getValue("sys_id")].join('');
+        } else if (gr.role.name == 'x_snc_ow_credit_0.Manager') {
+            url = [gs.getProperty('glide.servlet.uri'), 'now/x_snc_ow_credit_0-cost-approval/manager-workspace/record/x_snc_ow_credit_0_expense_request/', current.getValue("sys_id")].join('');
+        }
+    }
+
+
+    var backgroundColor = 'background-color: rgb(var(--now-color--primary-1));';
+    var color = 'color:  rgb(var(--now-color--neutral-0));';
+    var fontSize = 'font-size: 16px;';
+    var fontFamily = 'font-family: lato;';
+    var textDecoration = 'text-decoration: none; border-radius: 4px;';
+    var webKitBorder = '-webkit-border-radius: 4px;';
+    var mozBorder = '-moz-border-radius: 4px;';
+    var display = 'display: flex; justify-content:center;';
+    var padding = 'padding: 6px 16px 16px 16px';
+
+    template.print('<table style="' + textDecoration + webKitBorder + mozBorder + display + ' background-color: #4F52BD; height: 32px; width:126px;" role="presentation" border="0" cellspacing="0" cellpadding="0">');
+    template.print('<tbody><tr>');
+    template.print('<td style="width: 126px; text-align: center; height: 32px;">');
+    template.print('<a href="' + url + '"');
+    template.print('style="' + textDecoration + color + fontSize + fontFamily);
+    template.print('">');
+    template.print('View request');
+    template.print('</a>');
+    template.print('</td></tr></tbody></table>');
+    template.print('<br>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:05</sys_created_on>
+        <sys_id>2b00f29c17876510e124335181266325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ow_credit_0_budget_ws</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_script_email_2b00f29c17876510e124335181266325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:05</sys_updated_on>
+    </sys_script_email>
+</record_update>

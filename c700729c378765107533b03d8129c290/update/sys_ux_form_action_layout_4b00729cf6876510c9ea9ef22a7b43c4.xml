@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout">
+    <sys_ux_form_action_layout action="INSERT_OR_UPDATE">
+        <action_config/>
+        <active>true</active>
+        <description/>
+        <name>Approve/Reject budget reviewer</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action_layout</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:10</sys_created_on>
+        <sys_id>4b00729cf6876510c9ea9ef22a7b43c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve/Reject budget reviewer</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_4b00729cf6876510c9ea9ef22a7b43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:10</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+    </sys_ux_form_action_layout>
+</record_update>

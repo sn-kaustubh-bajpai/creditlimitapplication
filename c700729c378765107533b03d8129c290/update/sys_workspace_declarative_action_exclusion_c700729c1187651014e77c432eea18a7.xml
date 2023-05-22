@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_workspace_declarative_action_exclusion">
+    <sys_workspace_declarative_action_exclusion action="INSERT_OR_UPDATE">
+        <action_assignment display_value="edit_({{count}})">4a9232b273131010a0a79329faf6a732</action_assignment>
+        <exclude_all_child_tables>false</exclude_all_child_tables>
+        <exclude_self>true</exclude_self>
+        <sys_class_name>sys_workspace_declarative_action_exclusion</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:42:04</sys_created_on>
+        <sys_id>c700729c1187651014e77c432eea18a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ow_credit_0_expense_request</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_workspace_declarative_action_exclusion_c700729c1187651014e77c432eea18a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:42:04</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+    </sys_workspace_declarative_action_exclusion>
+</record_update>

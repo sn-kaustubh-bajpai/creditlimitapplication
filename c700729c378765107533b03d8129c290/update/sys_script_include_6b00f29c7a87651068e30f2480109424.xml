@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_ow_credit_0.workspaceStarterExpUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>workspaceStarterExpUtils</name>
+        <script><![CDATA[var workspaceStarterExpUtils = Class.create();
+workspaceStarterExpUtils.prototype = {
+    initialize: function() {},
+
+    checkContextualConfig: function(tableName) {
+
+        //To check Agent assist is configured for current table on workspace
+
+        var gr = new GlideRecord('cxs_table_config');
+        gr.addQuery('table', '=', tableName);
+        gr.addQuery('ui_type', '=', 'workspace');
+        gr.query();
+        if (gr.next()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+	approveRejectButtonsVisibility: function(requestRecord){
+		var approverRecord = new GlideRecord('sysapproval_approver');
+		approverRecord.addQuery('sysapproval','=',requestRecord.sys_id);
+		approverRecord.addQuery('approver','=',gs.getUserID());
+		approverRecord.addQuery('state','=','requested');
+		approverRecord.query();
+		if(approverRecord.next()){
+			return true;
+		} else{
+			return false;
+		}
+	},
+    type: 'workspaceStarterExpUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:52</sys_created_on>
+        <sys_id>6b00f29c7a87651068e30f2480109424</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspaceStarterExpUtils</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_script_include_6b00f29c7a87651068e30f2480109424</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

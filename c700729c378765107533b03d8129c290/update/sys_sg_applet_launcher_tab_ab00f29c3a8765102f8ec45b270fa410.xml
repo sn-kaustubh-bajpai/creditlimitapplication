@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="My team's costs">ef00f29cfc8765108130134a89bdee14</applet_launcher>
+        <icon display_value="Chart Bar">e300f29ca6876510373c3bf249ed1111</icon>
+        <label>My team's costs</label>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:55</sys_created_on>
+        <sys_id>ab00f29c3a8765102f8ec45b270fa410</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My team's costs</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_ab00f29c3a8765102f8ec45b270fa410</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:55</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>

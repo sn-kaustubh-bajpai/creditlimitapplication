@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>instance_relative_url</condition_type>
+        <description>Single score DI for Budget</description>
+        <group_by/>
+        <instance_relative_url_qc>{{encodedQuery}}</instance_relative_url_qc>
+        <name>Single score DI for Budget</name>
+        <offline_query_condition/>
+        <offline_query_condition_script/>
+        <query_condition/>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:52</sys_created_on>
+        <sys_id>ab00b29c58876510d92e21232b8f02f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Single score DI for Budget</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_data_item_ab00b29c58876510d92e21232b8f02f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:52</sys_updated_on>
+        <table>x_snc_ow_credit_0_budget_definition</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=ab00b29c58876510d92e21232b8f02f4"/>
+</record_update>

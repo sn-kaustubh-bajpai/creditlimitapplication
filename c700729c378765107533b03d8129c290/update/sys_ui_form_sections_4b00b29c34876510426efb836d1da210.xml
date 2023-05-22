@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="4b00b29c34876510426efb836d1da210" sys_domain="global" table="x_snc_ow_credit_0_expense_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-22 22:42:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4700b29c518765105dab138e53d95c0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ow_credit_0_expense_request" name="x_snc_ow_credit_0_expense_request" sys_domain="global" view="8700b29cd28765108f05200605e19a10">4b00b29c34876510426efb836d1da210</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_expense_request" sys_domain="global" view="8700b29cd28765108f05200605e19a10">0f00b29c2987651030d72a6ea54fc00e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-22 22:42:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_ow_credit_0_expense_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-22 22:42:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b00b29c34876510426efb836d1da210</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ow_credit_0_expense_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+            <sys_update_name>sys_ui_form_sections_4b00b29c34876510426efb836d1da210</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-22 22:42:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Cost Approval (x_snc_ow_credit_0)" name="cost_approval_x_snc_ow_credit_0">8700b29cd28765108f05200605e19a10</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

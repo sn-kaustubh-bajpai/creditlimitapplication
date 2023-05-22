@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="changed_fields" label="Changed Fields" language="en" table="var__m_sys_hub_flow_input_a700f29c9287651086700b682fee434c">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>changed_fields</element>
+            <help/>
+            <hint/>
+            <label>Changed Fields</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a700f29c9287651086700b682fee434c</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-22 22:41:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Changed Fields</sys_name>
+            <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+            <sys_update_name>sys_documentation_!!!table_name_256!!!_changed_fields_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-22 22:41:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

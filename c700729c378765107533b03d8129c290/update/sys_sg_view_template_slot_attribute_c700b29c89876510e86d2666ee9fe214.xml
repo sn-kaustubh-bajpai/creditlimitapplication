@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template_slot_attribute">
+    <sys_sg_view_template_slot_attribute action="INSERT_OR_UPDATE">
+        <description>button_04_Button</description>
+        <name display_value="Button">652f59c2b7321010df65f6efce11a9a5</name>
+        <sys_class_name>sys_sg_view_template_slot_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:58</sys_created_on>
+        <sys_id>c700b29c89876510e86d2666ee9fe214</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>652f59c2b7321010df65f6efce11a9a5</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_view_template_slot_attribute_c700b29c89876510e86d2666ee9fe214</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:58</sys_updated_on>
+        <translated_value/>
+        <value>2f00f29c468765107053dee9574d6801</value>
+        <view_template_slot display_value="button_04">5f00b29c3b876510ee64f9f5c1e11e7a</view_template_slot>
+    </sys_sg_view_template_slot_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=c700b29c89876510e86d2666ee9fe214"/>
+</record_update>

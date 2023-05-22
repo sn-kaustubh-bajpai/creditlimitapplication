@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>short_description</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:48</sys_created_on>
+        <sys_id>f700f29c848765102342eb21e8faa8ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>short_description</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_db_view_table_field_f700f29c848765102342eb21e8faa8ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:48</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_request</table>
+        <view_table display_value="x_snc_ow_credit_0_expense_request">b300f29c1087651056234a34faf2c0bc</view_table>
+    </sys_db_view_table_field>
+</record_update>

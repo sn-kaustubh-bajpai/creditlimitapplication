@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_param_map">
+    <sys_sg_screen_param_map action="INSERT_OR_UPDATE">
+        <item_parameter display_value="encodedQuery">9f00b29c6c8765107061064076451ad8</item_parameter>
+        <screen display_value="Requests">2300f29cec87651068695819c78e0101</screen>
+        <sys_class_name>sys_sg_screen_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:59</sys_created_on>
+        <sys_id>d300b29c618765106fd2951173fd15a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9f00b29c6c8765107061064076451ad8</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_screen_param_map_d300b29c618765106fd2951173fd15a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:59</sys_updated_on>
+        <ui_parameter display_value="encodedQuery">d700b29c3e87651009a1c8a371a2c4b4</ui_parameter>
+    </sys_sg_screen_param_map>
+</record_update>

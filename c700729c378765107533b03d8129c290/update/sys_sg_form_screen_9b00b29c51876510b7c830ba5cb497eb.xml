@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>false</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="Expenses2 Record Screen Icon">d700b29c5f876510459ce2e25e9362eb</icon>
+        <item_view/>
+        <name>Expenses2 Record Screen</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <parameter_screen/>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:32</sys_created_on>
+        <sys_id>9b00b29c51876510b7c830ba5cb497eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Expenses2 Record Screen</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_form_screen_9b00b29c51876510b7c830ba5cb497eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:32</sys_updated_on>
+        <table>x_snc_ow_credit_0_expense_line_item</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="">c7cc4551580b7410f87725b2b3822328</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b00b29c51876510b7c830ba5cb497eb"/>
+</record_update>

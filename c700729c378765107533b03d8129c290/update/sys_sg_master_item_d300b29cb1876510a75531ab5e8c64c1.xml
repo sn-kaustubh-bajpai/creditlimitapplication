@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_ow_credit_0_expense_request</datasource_table>
+        <datasource_table_condition table="x_snc_ow_credit_0_expense_request">assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=-6<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item display_value="Pending final review" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-6"/>
+        </datasource_table_condition>
+        <embedded_screen display_value="My work - Budget Reviewer Record Screen">6700b29c79876510e8c4e27981c728f0</embedded_screen>
+        <item_view/>
+        <name>My work - Budget Reviewer List Item Config</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 22:41:49</sys_created_on>
+        <sys_id>d300b29cb1876510a75531ab5e8c64c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My work - Budget Reviewer List Item Config</sys_name>
+        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_sg_master_item_d300b29cb1876510a75531ab5e8c64c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:41:49</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="My work - Budget Reviewer Card">1700b29cfd8765101b2fa72ab0a6f6b7</view_config>
+    </sys_sg_master_item>
+</record_update>
