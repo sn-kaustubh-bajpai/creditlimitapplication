@@ -29,16 +29,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-22 22:41:27</sys_created_on>
         <sys_id>c700729c378765107533b03d8129c290</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>application_repo_pipeline</sys_updated_by>
-        <sys_updated_on>2023-05-23 00:19:17</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-23 03:26:30</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=c700729c378765107533b03d8129c290"/>
     <sys_attachment action="INSERT_OR_UPDATE">
