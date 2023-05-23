@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_credit_request" label="Credit Request" language="en" table="var__m_sys_decision_input_bd79b614970b651082bdf1d71153af73">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_credit_request</element>
+            <help/>
+            <hint/>
+            <label>Credit Request</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_bd79b614970b651082bdf1d71153af73</name>
+            <plural>Credit Request</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-22 23:36:11</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Credit Request</sys_name>
+            <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_bd79b614970b651082bdf1d71153af73_u_credit_request_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-22 23:36:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2a9c3698970b651082bdf1d71153afe4</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>829c3698970b651082bdf1d71153af4a</answer>
+        <condition table="var__m_sys_decision_input_bd79b614970b651082bdf1d71153af73">u_credit_request.credit_scoreBETWEEN740@799^u_credit_request.credit_default=false^EQ<item endquery="false" field="u_credit_request.credit_score" goto="false" newquery="false" operator="BETWEEN" or="false" value="740@799"/>
+            <item endquery="false" field="u_credit_request.credit_default" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Equifax CCA-1 Apply">bd79b614970b651082bdf1d71153af73</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_bd79b614970b651082bdf1d71153af73</input_table>
+        <label>Equifax CCA-1 Apply_400</label>
+        <order>400</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2a9c3698970b651082bdf1d71153afe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Equifax CCA-1 Apply_400</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_decision_question_2a9c3698970b651082bdf1d71153afe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:14</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:14</sys_created_on>
+        <sys_id>e69c3698970b651082bdf1d71153afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Equifax CCA-1 Apply_400</sys_name>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_metadata_link_e69c3698970b651082bdf1d71153afe5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:14</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

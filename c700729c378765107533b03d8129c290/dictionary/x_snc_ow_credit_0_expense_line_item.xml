@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="3700f29c9787651082bdf1d71153afe1" label="Expense line item" max_length="40" name="x_snc_ow_credit_0_expense_line_item" type="collection">
+    <element db_object_id="3700f29c9787651082bdf1d71153afe1" label="Request Line Item" max_length="40" name="x_snc_ow_credit_0_expense_line_item" type="collection">
         <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" label="Expense amount" max_length="32" name="expense_amount" type="currency2"/>
         <element label="Expense name" max_length="40" name="expense_name" type="string"/>
         <element label="Expense request" max_length="32" name="expense_request" reference="x_snc_ow_credit_0_expense_request" type="reference"/>

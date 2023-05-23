@@ -9,9 +9,9 @@
         <sys_id>ff00f29c358765107ea5f48c18754dd1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
         <sys_policy/>
-        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
         <sys_suggestion_reader_group_id display_value="Suggested Result Reader Group for Cost Approval - Manager">3f00f29cf5876510a95b6792ce952ed1</sys_suggestion_reader_group_id>
         <sys_suggestion_reader_id display_value="Personal Click Reader">ec49ee515b511010627eed35cc81c7b9</sys_suggestion_reader_id>
         <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_ff00f29c358765107ea5f48c18754dd1</sys_update_name>

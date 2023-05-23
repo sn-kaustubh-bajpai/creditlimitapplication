@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_definition">
+    <sys_declarative_action_payload_definition action="INSERT_OR_UPDATE">
+        <action_key>MY_TASK_REJECT_ACTION</action_key>
+        <applicable_to>035d270073151010c342d5fdbdf6a715</applicable_to>
+        <description/>
+        <label>Reject</label>
+        <payload_field_table>var__m_sys_declarative_action_payload_field_8ff2f658b6c76510cc95dc0ee7bff4d6</payload_field_table>
+        <payload_template>{&#13;
+        "table": "{{table}}",&#13;
+        "sysId": "{{sys_id}}"&#13;
+}</payload_template>
+        <sys_class_name>sys_declarative_action_payload_definition</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-05-22 22:54:16</sys_created_on>
+        <sys_id>8ff2f658b6c76510cc95dc0ee7bff4d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reject</sys_name>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_definition_8ff2f658b6c76510cc95dc0ee7bff4d6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:54:16</sys_updated_on>
+    </sys_declarative_action_payload_definition>
+</record_update>

@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_snc_ow_credit_0_expense_request" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Expense request - Default view" name="x_snc_ow_credit_0_expense_request" related_list="NULL" sys_domain="global" view="Default view">4b00b29cb687651093a1d7ea674db202</list_id>
+            <list_id display_value="Credit Request - Default view" name="x_snc_ow_credit_0_expense_request" related_list="NULL" sys_domain="global" view="Default view">4b00b29cb687651093a1d7ea674db202</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_snc_ow_credit_0_expense_line_item.expense_request</related_list>
@@ -16,7 +16,7 @@
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Expense request - Default view" name="x_snc_ow_credit_0_expense_request" related_list="NULL" sys_domain="global" view="Default view">4b00b29cb687651093a1d7ea674db202</list_id>
+            <list_id display_value="Credit Request - Default view" name="x_snc_ow_credit_0_expense_request" related_list="NULL" sys_domain="global" view="Default view">4b00b29cb687651093a1d7ea674db202</list_id>
             <order_by/>
             <position>1</position>
             <related_list>task_sla.task</related_list>
@@ -29,7 +29,7 @@
             <sys_updated_on>2023-05-22 22:41:53</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Expense request - Default view</calculated_name>
+            <calculated_name>Credit Request - Default view</calculated_name>
             <filter/>
             <name>x_snc_ow_credit_0_expense_request</name>
             <order_by/>
@@ -43,9 +43,9 @@
             <sys_id>4b00b29cb687651093a1d7ea674db202</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Expense request - Default view</sys_name>
-            <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+            <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
             <sys_policy/>
-            <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+            <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
             <sys_update_name>sys_ui_related_x_snc_ow_credit_0_expense_request_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-05-22 22:41:53</sys_updated_on>

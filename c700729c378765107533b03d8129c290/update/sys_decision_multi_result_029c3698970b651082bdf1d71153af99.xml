@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Equifax CCA-1 Apply">bd79b614970b651082bdf1d71153af73</decision_table>
+        <label>Credit Score Reason: Credit Default, Approval Group: Credit Services</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>029c3698970b651082bdf1d71153af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Credit Score Reason: Credit Default, Approval Group: Credit Services</sys_name>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_decision_multi_result_029c3698970b651082bdf1d71153af99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:12</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=029c3698970b651082bdf1d71153af99"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>029c3698970b651082bdf1d71153af99</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:12</sys_created_on>
+        <sys_id>069c3698970b651082bdf1d71153af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:12</sys_updated_on>
+        <value>Credit Default</value>
+        <variable display_value="Credit Score Reason">bd9cf298970b651082bdf1d71153aff0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>029c3698970b651082bdf1d71153af99</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:12</sys_created_on>
+        <sys_id>c69c3698970b651082bdf1d71153af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:12</sys_updated_on>
+        <value>a98a7a94970b651082bdf1d71153af74</value>
+        <variable display_value="Approval Group">719c3698970b651082bdf1d71153af11</variable>
+    </sys_variable_value>
+</record_update>

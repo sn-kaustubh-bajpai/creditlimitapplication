@@ -12,7 +12,7 @@
         <confirm_label/>
         <confirmation_message/>
         <context>global</context>
-        <description>Budget Navigation</description>
+        <description>Credit Navigation</description>
         <destination_alp/>
         <destination_screen display_value="Budget">eb00f29c2f8765106a280eb9fbcf810f</destination_screen>
         <destination_type>screen</destination_type>
@@ -29,7 +29,7 @@
         <mail_address/>
         <mail_content/>
         <mail_subject/>
-        <name>Budget Navigation</name>
+        <name>Credit Navigation</name>
         <offline>false</offline>
         <offline_condition/>
         <offline_condition_script/>
@@ -58,14 +58,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-22 22:41:31</sys_created_on>
         <sys_id>6300f29c0687651087da7c2a1d4e6d10</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Budget Navigation</sys_name>
-        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Credit Navigation</sys_name>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
         <sys_policy/>
-        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
         <sys_update_name>sys_sg_button_6300f29c0687651087da7c2a1d4e6d10</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-22 22:41:31</sys_updated_on>
+        <sys_updated_on>2023-05-22 23:39:02</sys_updated_on>
         <table/>
         <take_value_from_field>true</take_value_from_field>
         <type>redirection</type>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="8c10369c9787651082bdf1d71153af49" label="Budget definition" max_length="40" name="x_snc_ow_credit_0_budget_definition" text_index="true" type="collection">
-        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Budget available" max_length="32" name="budget_available" read_only="true" type="currency2"/>
-        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Budget spent" max_length="32" name="budget_spent" read_only="true" type="currency2"/>
+    <element audit="true" db_object_id="8c10369c9787651082bdf1d71153af49" label="Credit Definition" max_length="40" name="x_snc_ow_credit_0_budget_definition" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Credit available" max_length="32" name="budget_available" read_only="true" type="currency2"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" default="0" label="Credit spent" max_length="32" name="budget_spent" read_only="true" type="currency2"/>
         <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
@@ -12,7 +12,7 @@
                 <element inactive_on_update="false" label="Closed" sequence="30" value="30"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" label="Total budget" mandatory="true" max_length="32" name="total_budget" type="currency2"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.currency2.Currency2XMLSerializer" label="Total Credit Cap" mandatory="true" max_length="32" name="total_budget" type="currency2"/>
         <element attributes="edge_encryption_enabled=true" label="Work notes" max_length="40" name="work_notes" type="journal_input"/>
         <index name="index">
             <element name="budget_available"/>

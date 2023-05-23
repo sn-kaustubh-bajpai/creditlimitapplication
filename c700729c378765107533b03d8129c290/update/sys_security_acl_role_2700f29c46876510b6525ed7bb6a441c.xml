@@ -6,9 +6,9 @@
         <sys_id>2700f29c46876510b6525ed7bb6a441c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_ow_credit_0_expense_request.</sys_name>
-        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
         <sys_policy/>
-        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
         <sys_security_acl display_value="x_snc_ow_credit_0_expense_request">6f00f29c81876510c0ac3f8c250f5220</sys_security_acl>
         <sys_update_name>sys_security_acl_role_2700f29c46876510b6525ed7bb6a441c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

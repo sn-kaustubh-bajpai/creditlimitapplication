@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Public">4ff2f65887c765103f09434161a831d7</applicability>
+        <order>0</order>
+        <screen display_value="Login Default">cff2f658cdc765107dbb752991fbb2cb</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-05-22 22:54:15</sys_created_on>
+        <sys_id>83f2f658efc765109b41a250f48307cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_83f2f658efc765109b41a250f48307cc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:54:15</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

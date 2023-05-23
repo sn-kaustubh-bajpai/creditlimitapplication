@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_redirect_dest_field">
     <sys_sg_redirect_dest_field action="INSERT_OR_UPDATE">
-        <button display_value="Single Score Report Drill down - Budget Reviewer">a700f29c898765102785a9e82c2bec01</button>
+        <button display_value="Single Score Report Drill down - Credit Reviewer">a700f29c898765102785a9e82c2bec01</button>
         <button_table/>
         <constant_value/>
         <destination_ui_parameter display_value="encodedQuery">d700b29c3e87651009a1c8a371a2c4b4</destination_ui_parameter>
@@ -12,9 +12,9 @@
         <sys_id>1b00b29ca787651095bf0b2d18a4ecb3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>d700b29c3e87651009a1c8a371a2c4b4</sys_name>
-        <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
         <sys_policy/>
-        <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
         <sys_update_name>sys_sg_redirect_dest_field_1b00b29ca787651095bf0b2d18a4ecb3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-22 22:41:43</sys_updated_on>

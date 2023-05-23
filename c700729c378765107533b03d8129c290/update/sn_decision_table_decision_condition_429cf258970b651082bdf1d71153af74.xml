@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="Credit Request">a99cb298970b651082bdf1d71153af49</decision_input>
+        <decision_table display_value="Equifax CCA-1 Apply">bd79b614970b651082bdf1d71153af73</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field>u_credit_request.credit_score</field>
+        <field_label>Credit Request &gt; Credit Score</field_label>
+        <field_parent_table>x_snc_ow_credit_0_expense_request</field_parent_table>
+        <label>Credit Score</label>
+        <order>100</order>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 23:36:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>429cf258970b651082bdf1d71153af74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_429cf258970b651082bdf1d71153af74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 23:36:12</sys_updated_on>
+        <type display_value="Integer">aab367c1bf3320001875647fcf073909</type>
+    </sn_decision_table_decision_condition>
+</record_update>

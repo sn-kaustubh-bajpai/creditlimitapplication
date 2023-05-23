@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_predicate_m2m_action_assignment">
+    <sys_ux_predicate_m2m_action_assignment action="INSERT_OR_UPDATE">
+        <declarative_action_assignment display_value="approve">cbf2f65890c76510761b0e4b6b01a2d6</declarative_action_assignment>
+        <predicate display_value="My tasks requested item">47f2f658f7c76510ef4053cefe57d6ae</predicate>
+        <sys_class_name>sys_ux_predicate_m2m_action_assignment</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-05-22 22:54:16</sys_created_on>
+        <sys_id>47f2f65805c765106bef3e0b9808e5a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+        <sys_update_name>sys_ux_predicate_m2m_action_assignment_47f2f65805c765106bef3e0b9808e5a5</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-05-22 22:54:16</sys_updated_on>
+    </sys_ux_predicate_m2m_action_assignment>
+</record_update>

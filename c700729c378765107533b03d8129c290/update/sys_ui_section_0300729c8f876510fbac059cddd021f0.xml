@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="" section_id="0300729c8f876510fbac059cddd021f0" sys_domain="global" table="x_snc_ow_credit_0_budget_definition" version="3" view="">
+    <sys_ui_section caption="Credit definition" section_id="0300729c8f876510fbac059cddd021f0" sys_domain="global" table="x_snc_ow_credit_0_budget_definition" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>cf00729c458765103820cbb30a8af0f0</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>558db21c970b651082bdf1d71153af03</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>start_date</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>8700729cc28765102caa40384f5d4bf0</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>598db21c970b651082bdf1d71153af03</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>end_date</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>0b00729c75876510b08b741179255ff1</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>5d8db21c970b651082bdf1d71153af03</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>0f00729c9287651010941452004c04f0</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>518db21c970b651082bdf1d71153af04</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>state</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>8300729c358765103ae3332f720cddf1</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>558db21c970b651082bdf1d71153af04</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>budget_available</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>0700729c81876510d11eb01a9fb522ef</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>598db21c970b651082bdf1d71153af04</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>budget_spent</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>0f00729c0387651071f56ed14de7bded</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>5d8db21c970b651082bdf1d71153af04</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>total_budget</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>0b00729c5e8765102f36a04a124972ee</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>518db21c970b651082bdf1d71153af05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>.end_split</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>4f00729ca2876510dc4aa703c61940ef</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>558db21c970b651082bdf1d71153af05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -130,32 +130,18 @@
             <element>work_notes</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>4300729cae87651044ef8ce032cf01ef</sys_id>
+            <sys_created_on>2023-05-22 23:40:15</sys_created_on>
+            <sys_id>598db21c970b651082bdf1d71153af05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
+            <sys_ui_section caption="Credit definition" display_value="Credit definition" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-05-22 22:42:11</sys_created_on>
-            <sys_id>cf00729cf6876510c7c607c71a60b0ed</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="">4f00729c9c876510070e9fcbea4fb8fe</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_ow_credit_0_budget_definition" sys_domain="global" view="Default view">0300729c8f876510fbac059cddd021f0</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>Credit definition</caption>
             <header>false</header>
             <name>x_snc_ow_credit_0_budget_definition</name>
             <roles/>
@@ -165,15 +151,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>0300729c8f876510fbac059cddd021f0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>x_snc_ow_credit_0_budget_definition</sys_name>
             <sys_overrides/>
-            <sys_package display_value="OW Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
+            <sys_package display_value="Credit Limit Application" source="x_snc_ow_credit_0">c700729c378765107533b03d8129c290</sys_package>
             <sys_policy/>
-            <sys_scope display_value="OW Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
+            <sys_scope display_value="Credit Limit Application">c700729c378765107533b03d8129c290</sys_scope>
             <sys_update_name>sys_ui_section_0300729c8f876510fbac059cddd021f0</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-05-22 22:42:11</sys_updated_on>
+            <sys_updated_on>2023-05-22 23:40:15</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
